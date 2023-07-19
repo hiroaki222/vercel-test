@@ -2,13 +2,13 @@
 from flask import Flask, jsonify, render_template, request
 import json
 
-""" with open('config.json') as f:
+with open('config.json') as f:
     di = json.load(f)
 
 def data():
     with open('data.json') as f:
         data = json.load(f)
-    return data """
+    return data
 
 app = Flask(__name__)
 app.json.ensure_ascii = False
